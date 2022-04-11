@@ -40,7 +40,7 @@ class sketch {
     this.margin = 50;
     this.scroll = 0;
     this.scrollTarget = 0;
-    this.width = (window.innerWidth - 2 * this.margin) / 3;
+    this.width = (window.innerWidth - 2 * this.margin) / 4.9;
     this.height = window.innerHeight * 0.8;
     this.container = new PIXI.Container();
     this.app.stage.addChild(this.container);
@@ -67,7 +67,7 @@ class sketch {
 
   scrollEvent() {
     document.addEventListener("mousewheel", (e) => {
-      this.scrollTarget = e.wheelDelta / 10;
+      this.scrollTarget = e.wheelDelta / 20;
     });
   }
 
